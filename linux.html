@@ -12,7 +12,7 @@
 
 <div class="row">
   <div class="col-md-12">
-    <div class="panel panel-default linux-content-container suositellut">
+    <div class="panel panel-default suositellut">
       <div class="panel-body">
        <img src="img/xubuntu.png" alt="..." ><br/><br/>
        <div class="tab-content">
@@ -101,7 +101,7 @@
 
 <div class="row">
   <div class="col-md-12">
-    <div class=" linux-content-container asennus"  style="display:none;">atsennus
+    <div class="asennus"  style="display:none;">atsennus
     </div>
   </div>
 
@@ -152,7 +152,7 @@ $(function() {
       var thisName = $(this).attr("name");
 
       if(isactive === false) {
-        $(".linux-content-container").hide();
+        $("#linux .panel").hide();
        $("."+thisName).each(function(index) {
         $(this).delay(200*index).fadeIn(400);
       });
