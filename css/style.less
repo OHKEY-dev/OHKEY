@@ -13,14 +13,26 @@ body {
 
 #recent .panel-body {
 	max-height:400px;
+		overflow: hidden;
+}
+
+#recent  p {
+	text-overflow:ellipsis;
+	overflow: hidden;
+	white-space:normal;
+
+}
+#recent .panel:hover{
+//border-bottom:  1px solid #df691a;
+
 
 }
 
 
 
-
 #recent .panel {
 display:none;
+
 
 }
 
@@ -36,7 +48,7 @@ overflow:hidden;
 
 .panel img {
 width:auto;
-height:60px;
+height:40px;
 margin-bottom:15px;
 	//max-height: 100px;
 	
@@ -108,7 +120,7 @@ margin-top:10px;
 
  #koodieditointi .panel-footer ul li a, #linux .panel-footer ul li a, #windows .panel-footer ul li a{
 padding-right:15px;
-color:#df691a;
+color:#df791a;
 background-color:rgba(0,0,0,0.0);
 }
 
@@ -170,66 +182,3 @@ color:  #df791a;
 
 
 
-
-/** Guide **/
-
-#guide .list-group {
-//z-index: 1;
-
-
-}
-
-#guide .list-group-item-heading{
-	font-size:80%;
-
-}
-
-#guide .panel {
-float:right;
-margin-right:10%;
-max-width: 1500px;
-
-}
-
-
-.guide-toc h4{
-text-overflow:ellipsis;
-white-space:nowrap;
-overflow:hidden;
-
-
-}
-
-#guide .list-group-item {
-	//background-color:rgba(78,93,108,0.8);
-
-}
-
-#guide .affix {
-	width:15%;
-}
-/*
- @media screen and (max-width: 992px) {
-#guide .list-group {
-z-index: 1;
-
-
-}
- }*/
-
-#guide .guide-toc button{
-margin-top:2px;
-width:100%;
-text-align: left;
-padding:5px 5px 5px 0;
-//background-color:rgba(78,93,108,1);
-}
-
-#guide .panel-heading {
-	font-size:200%;
-}
-
-#guide .step {
-	border-bottom: 1px solid rgba(108,123,138,1);
-
-}
