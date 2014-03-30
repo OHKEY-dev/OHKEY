@@ -18,9 +18,12 @@
 float:right;
 margin-right:10%;
 max-width: 1500px;
+margin-top:5px;
 
 }
-
+.guide-toc {
+	margin-left:5px;
+}
 
 .guide-toc h4{
 text-overflow:ellipsis;
@@ -31,13 +34,18 @@ overflow:hidden;
 }
 
 
+#guide .list-group-item {
+	border:0;
+	border-radius: 0 0 3px 3px;
+}
 
 #guide .list-group-item a{
 	//background-color:rgba(78,93,108,0.8);
 //background-color:#dd4814;
 //color:rgba(63,82,100,1);
 font-size:100%;
-font-weight:900;
+
+
 }
 
 #guide .affix {
@@ -57,6 +65,7 @@ margin-top:2px;
 width:100%;
 text-align: left;
 padding:5px 5px 5px 0;
+font-size: 100%;
 //background-color:rgba(78,93,108,1);
 }
 
@@ -79,16 +88,19 @@ li.active:hover,
 li.active:focus  {
     //background-color: #dd4814;
     border-bottom:1px solid rgba(108,123,138,0.5);
-
+font-weight: bolder;
+font-size:125%;
 }
 li.active a,
 li.active:hover a,
 li:focus a  {
-    color: #FFF;
+    //color: #FFF;
     //background-color: #dd4814;
-    background-image:none;
+   // background-image:none;
       //border-bottom:1px solid rgba(108,123,138,0.5);
       //box-shadow:inset 1px 1px 13px #dd4814;
+       //border-bottom:1px solid rgba(108,123,138,0.5);
+
 }
 
 
@@ -97,7 +109,15 @@ a.list-group-item.active:focus{
 }
 .toc{
 	background-color: rgba(223,105,26,1);
-	padding:5px;
+	padding:1px;
 	margin-top:10px;
+	border-radius: 3px 3px 0 0;
 
 }
+
+.toc h4{
+	padding:5px;
+	color:white;
+	margin-left:1%;
+}
+
