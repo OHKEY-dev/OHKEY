@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!--<!DOCTYPE html>
 <html>
 <head>
   <meta charset="utf-8">
@@ -20,9 +20,15 @@
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
       <![endif]-->
 
+<!--
+    </head>-->
+    <!--<body  data-target="#target_nav" data-spy="scroll" data-offset="80">-->
 
-    </head>
-  <body  data-target="#target_nav" data-spy="scroll" data-offset="80">
+
+
+
+
+
      <div id="guide">
 
       <div class="row">
@@ -107,11 +113,30 @@
 
 
 
-              <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-              <script src="js/bootstrap.min.js"></script>
-              <script src="js/custom.index.js"></script>
 
 
+
+<!--
+<script>
+$(function(){
+  $("body").scrollspy();
+  alert("mo");
+});
+</script>
+-->
+
+
+
+<!--
+
+<script>
+$(function(){$('.guide-toc-nav').on('activate.bs.scrollspy', function () {
+  alert("moi");
+});
+});
+
+</script>
+-->
               <script>
               $(function(){
                 var newId = 0;
@@ -189,34 +214,10 @@ $(function(){
 </script>
 
 
-<!--
-<script>
-$(function(){
-  $("body").scrollspy();
-  alert("mo");
-});
-</script>
--->
-
-
-
-<!--
-
-<script>
-$(function(){$('.guide-toc-nav').on('activate.bs.scrollspy', function () {
-  alert("moi");
-});
-});
-
-</script>
--->
-
+</div>
 <script>
 $(function(){
 $('#scroll-able').scrollspy();​
 });
 
 </script>
-</div>
-</body>
-</html>
