@@ -26,7 +26,10 @@ nav ul{
 	list-style: none;
 }
 
-
+.affix {
+position:fixed;
+top:5%;
+}
 
 
 
