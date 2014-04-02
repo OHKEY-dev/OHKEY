@@ -58,16 +58,12 @@
 									<h5>Sisällysluettelo</h5>
 								</div>
 								<ul class="toc-ul">
-									<li><a href="#">asd</a></li>
-									<li><a href="#">asd</a></li>
-									<li><a href="#">asd</a></li>
+								
 								</ul>
 							</div>
 						</div>
 
 						<div class="ruutu-10-tablet">
-							
-
 								<div class="rivi">
 									<div class="ruutu-12-tablet">
 								<!-- cat-lyhene tule sanasta category (katso mock-up) -->
@@ -115,12 +111,13 @@
 											</table>
 										</div>
 									</div>
-								</div>
-							</div>
-						</div>
+								</div><!-- .cat-main -->
+							</div><!-- .ruutu-12-tablet -->
+						</div><!-- .rivi -->
 
 
-
+						<div class="rivi">
+							<div class="ruutu-12-tablet">
 								<div class="cat-main">
 									<div class="cat-main-title"><h2>Linux</h2></div>
 									<div class="cat-sub">
@@ -152,10 +149,13 @@
 										</div>
 									</div>
 
-								</div>
+								</div><!-- .cat-main -->
+							</div><!-- .ruutu-12-tablet -->
+						</div><!-- .rivi -->
 
-						</div>
-					</div>
+						</div><!-- .ruutu-10-tablet -->
+					</div><!-- .content-container -->
+
 				</div>
 				</section>
 				<footer>
@@ -182,20 +182,46 @@
 
 					<script>
 					  $(function(){
-					    var newId = 0;
+					    //var newId = 0;
 					    $(".cat-main").each(function(index){
-					      newId = newId+1;
-					      $(this).attr("id","cat-main-num-"+newId);
+					      //newId = newId+1;
+					      $(this).attr("id","cat-main-num-"+index);
 					      var thisText = $(this).children(".cat-main-title").text();
-					      var Href="#cat-main-num-"+newId;
-					      var Class="list-group-item ";
+					      var Href="#cat-main-num-"+index;
+					      var Class="list-group-item";
 					      var hClass="list-group-item-heading";
 					      $(".toc-ul").append('<li class="' + Class + '"><a href="' + Href + '"><h4 class="'+ hClass + '">' + thisText + '</h4></a></li>');
-					               });
+					              
+					    
+					    	$(this).children().each(function(index){
+					    	//alert($(this).text());
+					      $(this).attr("id","cat-sub-num-"+index);
+					      var thisText = $(this).children(".cat-sub-title").text();
+					      var Href="#cat-sub-num-"+index;
+					      var Class="list-group-item";
+					      var hClass="list-group-item-heading";
+					      $(".toc-ul").append('<li class="' + Class + '"><a href="' + Href + '">' + thisText + '</a></li>');
+
+
+					    });
 							});
+					     });
 					</script>
 
 
+					<script>
+					$(function(){
+					 $(".toc-ul a").click(function(){
+
+					  $('html, body').animate({
+					    scrollTop: $( $(this).attr('href') ).offset().top
+					  }, 500);
+					  return false;
+
+						});
+					});
+
+					</script>
 
 
 
