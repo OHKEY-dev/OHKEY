@@ -49,6 +49,9 @@
 			<section>
 				<div class="rivi">
 					<div class="ruutu-12-tablet">
+								<!-- content-container luokka on tarkoitettu jQueryllä toimivaa navigointia varten: kun painetaan navissa linkkiä, piilottaa se kaikki content-container luokalla merkityt elementit ja tuo esille vain painetun buttonin kanssa saman attribuuttitiedon jakavan content-containerin. -->
+							<div class="content-container">
+
 						<div class="ruutu-2-tablet">
 							<div id="toc" class="affix">
 								<div class="toc-title">
@@ -63,8 +66,10 @@
 						</div>
 
 						<div class="ruutu-10-tablet">
-							<!-- content-container luokka on tarkoitettu jQueryllä toimivaa navigointia varten: kun painetaan navissa linkkiä, piilottaa se kaikki content-container luokalla merkityt elementit ja tuo esille vain painetun buttonin kanssa saman attribuuttitiedon jakavan content-containerin. -->
-							<div class="content-container">
+							
+
+								<div class="rivi">
+									<div class="ruutu-12-tablet">
 								<!-- cat-lyhene tule sanasta category (katso mock-up) -->
 								<div class="cat-main">
 									<div class="cat-main-title"><h2>Ohjelmat</h2></div>
@@ -111,6 +116,10 @@
 										</div>
 									</div>
 								</div>
+							</div>
+						</div>
+
+
 
 								<div class="cat-main">
 									<div class="cat-main-title"><h2>Linux</h2></div>
@@ -145,9 +154,9 @@
 
 								</div>
 
-							</div>
 						</div>
 					</div>
+				</div>
 				</section>
 				<footer>
 					<p>Täällä lymyilee footer -elementti.</p>
@@ -168,5 +177,32 @@
 						});
 					});					
 					</script>
+
+
+
+					<script>
+					  $(function(){
+					    var newId = 0;
+					    $(".cat-main").each(function(index){
+					      newId = newId+1;
+					      $(this).attr("id","cat-main-num-"+newId);
+					      var thisText = $(this).children(".cat-main-title").text();
+					      var Href="#cat-main-num-"+newId;
+					      var Class="list-group-item ";
+					      var hClass="list-group-item-heading";
+					      $(".toc-ul").append('<li class="' + Class + '"><a href="' + Href + '"><h4 class="'+ hClass + '">' + thisText + '</h4></a></li>');
+					               });
+							});
+					</script>
+
+
+
+
+
+
+
+
+
+
 				</body>
 				</html>
