@@ -181,22 +181,22 @@
 
 					<script>
 					$(function(){
-						var newId = 0;
-						var newId2 = 0;
-						$(".cat-main").each(function(newId){
-							newId = newId+1;
-							$(this).attr("id","cat-main-num-"+newId);
+						var mainId = 0;
+						var subId = 0;
+						$(".cat-main").each(function(){
+							mainId = mainId+1;
+							$(this).attr("id","cat-main-num-"+mainId);
 							var thisText = $(this).children(".cat-main-title").text();
-							var Href="#cat-main-num-"+newId;
+							var Href="#cat-main-num-"+mainId;
 							var Class="list-group-item";
 							var hClass="list-group-item-heading";
 							$(".toc-ul").append('<li class="' + Class + '"><a href="' + Href + '"><h4 class="'+ hClass + '">' + thisText + '</h4></a></li>');
 
-							$(this).children().each(function(index){
-								newId2 = newId2 + 1;
-								$(this).attr("id","cat-sub-num-"+newId2);
+							$(this).children().each(function(){
+								subId = subId + 1;
+								$(this).attr("id","cat-sub-num-"+subId);
 								var thisText = $(this).children(".cat-sub-title").text();
-								var Href="#cat-sub-num-"+newId2;
+								var Href="#cat-sub-num-"+subId;
 								var Class="list-group-item";
 								var hClass="list-group-item-heading";
 								$(".toc-ul").append('<li class="' + Class + '"><a href="' + Href + '">' + thisText + '</a></li>');
