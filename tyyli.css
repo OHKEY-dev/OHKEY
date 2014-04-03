@@ -24,13 +24,40 @@ nav ul{
 
 .toc-ul li {
 	list-style: none;
+	transition: padding-left 0.5s;
 }
+
 
 .affix {
 position:fixed;
 top:5%;
 }
 
+/** .active luokka annetaan scrollspy-javascript pluginin ansiosta sis.luetteloitemille sen mukaan, mikä luetteloitemiin
+liitoksissa oleva divi on käyttäjän ikkunassa näkyvillä **/
+.active{
+	font-size:125%;
+	padding-left:5%;
+	
+	
+}
+.active a {
+	color:rgba(120,200,200,1);
+}
+
+/* .active:after tai :before:n avulla voi laittaa merkkejä tai ihan mitä vain korostaakseen aktiiviseksi tulleen sis.luetteloitemiä 
+Isokokoisille listaitemeille se aiheuttaa ikävän rivivaihdon */
+.active:after{
+		content: ""; 
+}
+
+/** nämä margin-leftit ovat vain tuodakseen sisennysilmettä aliotsikoidihn - voi poistella jos halajaa **/
+.cat-sub-toc {
+	margin-left:5.5%;
+}
+.cat-sub {
+	margin-left:1.5%;
+}
 
 
 /*------------------------------------------- 
