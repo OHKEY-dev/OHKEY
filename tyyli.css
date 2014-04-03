@@ -41,7 +41,6 @@ liitoksissa oleva divi on käyttäjän ikkunassa näkyvillä **/
 	font-size:125%;
 	padding-left:5%;
 	border-left:3px solid tomato;
-
 	/*border-radius: 5px 5px 5px 5px;*/
 	background-color: rgba(255,99,71,0.8);
 
@@ -59,11 +58,17 @@ Isokokoisille listaitemeille se aiheuttaa ikävän rivivaihdon */
 }
 
 /** nämä margin-leftit ovat vain tuodakseen sisennysilmettä aliotsikoidihn - voi poistella jos halajaa **/
+/** cat-subin ja cat-main-title padding-bottomit ovat vain scrollspyn testaamiseen - voi poistella jos halajaa**/
 .cat-sub-toc {
 	margin-left:5.5%;
 }
 .cat-sub {
 	margin-left:1.5%;
+	padding-bottom:5%;
+}
+
+.cat-main-title {
+	padding-bottom:5%;
 }
 
 
