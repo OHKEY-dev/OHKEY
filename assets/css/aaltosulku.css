@@ -78,7 +78,7 @@ Isokokoisille listaitemeille se aiheuttaa ikävän rivivaihdon */
 }
 
 /* line 74, ../compass/sass/aaltosulku.scss */
-.sub-title-mark, .sub-title-open {
+.sub-title-mark {
   margin-right: 1px;
   font-weight: bold;
   color: tomato;
