@@ -1,5 +1,5 @@
 @import 'compass/css3';
-
+$lindeman-text-color: #444;
 nav {
 	text-align: center;
 }
@@ -9,7 +9,7 @@ nav ul li {
 	text-align: center;
 	float:left;
 	padding:2px 5px;
-    margin: auto;
+	margin: auto;
 }
 
 nav ul{
@@ -21,6 +21,8 @@ nav ul{
 	*display:inline;
 }
 
+
+
 .toc-ul li {
 	list-style: none;
 	transition: padding-left 0.5s;
@@ -28,8 +30,8 @@ nav ul{
 }
 
 .affix {
-position:fixed;
-top:5%;
+	position:fixed;
+	top:5%;
 }
 
 /** .active luokka annetaan scrollspy-javascript pluginin ansiosta sis.luetteloitemille sen mukaan, mikä luetteloitemiin
@@ -51,7 +53,7 @@ liitoksissa oleva divi on käyttäjän ikkunassa näkyvillä **/
 /* .active:after tai :before:n avulla voi laittaa merkkejä tai ihan mitä vain korostaakseen aktiiviseksi tulleen sis.luetteloitemiä 
 Isokokoisille listaitemeille se aiheuttaa ikävän rivivaihdon */
 .active:before{
-		content: ""; 
+	content: ""; 
 }
 
 /** nämä margin-leftit ovat vain tuodakseen sisennysilmettä aliotsikoidihn - voi poistella jos halajaa **/
@@ -67,3 +69,34 @@ Isokokoisille listaitemeille se aiheuttaa ikävän rivivaihdon */
 .cat-main-title {
 	padding-bottom:5%;
 }
+
+
+.sub-title-mark{
+
+	margin-right:1px;
+	font-weight:bold;
+	color:tomato;
+	float:left;
+}
+
+.sub-title-mark:before{
+
+}
+
+.sub-content {
+	display:none;
+	float:left;
+}
+
+.sub-title {
+	cursor: pointer;
+	color: $lindeman-text-color;
+	float:left;
+	width:100%;
+	
+}
+
+.sub-title-open {
+	@extend .sub-title-mark;
+}
+

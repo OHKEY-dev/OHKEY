@@ -23,13 +23,13 @@ nav ul {
   *display: inline;
 }
 
-/* line 24, ../compass/sass/aaltosulku.scss */
+/* line 26, ../compass/sass/aaltosulku.scss */
 .toc-ul li {
   list-style: none;
   transition: padding-left 0.5s;
 }
 
-/* line 30, ../compass/sass/aaltosulku.scss */
+/* line 32, ../compass/sass/aaltosulku.scss */
 .affix {
   position: fixed;
   top: 5%;
@@ -37,7 +37,7 @@ nav ul {
 
 /** .active luokka annetaan scrollspy-javascript pluginin ansiosta sis.luetteloitemille sen mukaan, mikä luetteloitemiin
 liitoksissa oleva divi on käyttäjän ikkunassa näkyvillä **/
-/* line 37, ../compass/sass/aaltosulku.scss */
+/* line 39, ../compass/sass/aaltosulku.scss */
 .active {
   font-size: 125%;
   padding-left: 5%;
@@ -46,7 +46,7 @@ liitoksissa oleva divi on käyttäjän ikkunassa näkyvillä **/
   background-color: rgba(255, 99, 71, 0.8);
 }
 
-/* line 46, ../compass/sass/aaltosulku.scss */
+/* line 48, ../compass/sass/aaltosulku.scss */
 .active a {
   /*color:rgba(120,200,200,1); */
   color: white;
@@ -54,25 +54,47 @@ liitoksissa oleva divi on käyttäjän ikkunassa näkyvillä **/
 
 /* .active:after tai :before:n avulla voi laittaa merkkejä tai ihan mitä vain korostaakseen aktiiviseksi tulleen sis.luetteloitemiä 
 Isokokoisille listaitemeille se aiheuttaa ikävän rivivaihdon */
-/* line 53, ../compass/sass/aaltosulku.scss */
+/* line 55, ../compass/sass/aaltosulku.scss */
 .active:before {
   content: "";
 }
 
 /** nämä margin-leftit ovat vain tuodakseen sisennysilmettä aliotsikoidihn - voi poistella jos halajaa **/
 /** cat-subin ja cat-main-title padding-bottomit ovat vain scrollspyn testaamiseen - voi poistella jos halajaa**/
-/* line 59, ../compass/sass/aaltosulku.scss */
+/* line 61, ../compass/sass/aaltosulku.scss */
 .cat-sub-toc {
   margin-left: 5.5%;
 }
 
-/* line 62, ../compass/sass/aaltosulku.scss */
+/* line 64, ../compass/sass/aaltosulku.scss */
 .cat-sub {
   margin-left: 1.5%;
   padding-bottom: 5%;
 }
 
-/* line 67, ../compass/sass/aaltosulku.scss */
+/* line 69, ../compass/sass/aaltosulku.scss */
 .cat-main-title {
   padding-bottom: 5%;
+}
+
+/* line 74, ../compass/sass/aaltosulku.scss */
+.sub-title-mark, .sub-title-open {
+  margin-right: 1px;
+  font-weight: bold;
+  color: tomato;
+  float: left;
+}
+
+/* line 86, ../compass/sass/aaltosulku.scss */
+.sub-content {
+  display: none;
+  float: left;
+}
+
+/* line 91, ../compass/sass/aaltosulku.scss */
+.sub-title {
+  cursor: pointer;
+  color: #444444;
+  float: left;
+  width: 100%;
 }
