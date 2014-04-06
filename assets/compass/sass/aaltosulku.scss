@@ -1,5 +1,11 @@
 @import 'compass/css3';
 $lindeman-text-color: #444;
+$line-color: rgba(255,169,131,0.4);
+
+footer {
+	border-top: 1px solid $line-color;
+}
+
 nav {
 	text-align: center;
 }
@@ -23,10 +29,21 @@ nav ul{
 
 
 
+#ohjeet .ruutu-10-tablet {
+	//background-color: rgba(255,99,71,0.02);
+	//background-color:rgba(155,155,155,0.1);
+	//box-shadow: inset 2px 2px 2px rgba(255,99,71,0.2);
+		//box-shadow:  inset 5px 0 0 0 5px  rgba(255,169,131,0.3);
+	//border-radius: 3px 3px 3px 3px;
+	border-left: 1px solid $line-color;
+	//border-left: 1px solid rgba(0,0,0,0.1);
+
+}
+
 .toc-ul li {
 	list-style: none;
 	transition: padding-left 0.5s;
-
+	//transition: font-size 0.5s;
 }
 
 .affix {
@@ -37,13 +54,14 @@ nav ul{
 /** .active luokka annetaan scrollspy-javascript pluginin ansiosta sis.luetteloitemille sen mukaan, mikä luetteloitemiin
 liitoksissa oleva divi on käyttäjän ikkunassa näkyvillä **/
 .active {
-	font-size:125%;
+	//font-size:125%;
 	padding-left:5%;
-	border-left:3px solid tomato;
-	/*border-radius: 5px 5px 5px 5px;*/
+	border-radius: 3px 3px 3px 3px;
 	background-color: rgba(255,99,71,0.8);
-
+	box-shadow: inset  3px 3px 3px rgba(255,169,131,0.4);
 	
+
+
 }
 .active a {
 	/*color:rgba(120,200,200,1); */
@@ -64,6 +82,7 @@ Isokokoisille listaitemeille se aiheuttaa ikävän rivivaihdon */
 .cat-sub {
 	margin-left:1.5%;
 	padding-bottom:5%;
+	width:85%;
 }
 
 .cat-main-title {
@@ -77,6 +96,7 @@ Isokokoisille listaitemeille se aiheuttaa ikävän rivivaihdon */
 	font-weight:bold;
 	color:tomato;
 	float:left;
+
 }
 
 
@@ -86,7 +106,26 @@ Isokokoisille listaitemeille se aiheuttaa ikävän rivivaihdon */
 	float:left;
 	height:100%;
 	width:100%;
+	margin-left:1.5%;
+	//background-color:rgba(155,155,155,0.1);
+	background-color: rgba(255,99,71,0.8);
+	box-shadow: inset 2px 2px 2px rgba(205,49,21,0.2);
+	border-radius: 3px 3px 3px 3px;
+	padding:5px;
+	margin-bottom:1.5%;
+	color:white;
+
+	a {
+		color:white;
+		font-weight:bold;
+
+	}
+
+	a:hover{
+		border-bottom:1px solid white;
+	}
 }
+
 
 .sub-title {
 	margin-left:1%;
@@ -96,6 +135,25 @@ Isokokoisille listaitemeille se aiheuttaa ikävän rivivaihdon */
 	width:100%;
 	
 }
+
+
+::selection {
+	background: rgba(255,99,71,0.8);; /* Safari */
+	color:white;
+	}
+::-moz-selection {
+	background: rgba(255,99,71,0.8);; /* Firefox */
+	color:white;
+}
+
+
+
+
+
+
+
+
+
 /*Custom modaali-ikkunan asetukset */
 .modalDialog {
 	position: fixed;
@@ -112,6 +170,7 @@ Isokokoisille listaitemeille se aiheuttaa ikävän rivivaihdon */
 	transition: opacity 400ms ease-in;
 	pointer-events: none;
 	overflow:scroll;
+	color: $lindeman-text-color;
 }
 
 .modalDialog:target {
