@@ -3,11 +3,12 @@ $lindeman-text-color: #444;
 $line-color: rgba(255,169,131,0.4);
 
 footer {
-	border-top: 1px solid $line-color;
+	//border-top: 1px solid $line-color;
 }
 
 nav {
 	text-align: center;
+
 }
 
 nav ul li {
@@ -25,6 +26,7 @@ nav ul{
 	padding:0;
 	zoom:1;
 	*display:inline;
+	float:right;
 }
 
 
@@ -35,7 +37,7 @@ nav ul{
 	//box-shadow: inset 2px 2px 2px rgba(255,99,71,0.2);
 		//box-shadow:  inset 5px 0 0 0 5px  rgba(255,169,131,0.3);
 	//border-radius: 3px 3px 3px 3px;
-	border-left: 1px solid $line-color;
+	//border-left: 1px solid $line-color;
 	//border-left: 1px solid rgba(0,0,0,0.1);
 
 }
@@ -44,7 +46,30 @@ nav ul{
 	list-style: none;
 	transition: padding-left 0.5s;
 	//transition: font-size 0.5s;
+	
 }
+
+.list-group-item a {
+	transition: padding-left 1s;
+}
+
+
+
+.content-container div:target{
+	animation-duration:1.2s;
+	animation-name:in-out;
+}
+
+
+@keyframes in-out {
+	from {
+		color:tomato;
+	}
+	to {
+
+	}
+}
+
 
 .affix {
 	position:fixed;
@@ -66,12 +91,15 @@ liitoksissa oleva divi on käyttäjän ikkunassa näkyvillä **/
 .active a {
 	/*color:rgba(120,200,200,1); */
 	color:white;
+	
 }
 
 /* .active:after tai :before:n avulla voi laittaa merkkejä tai ihan mitä vain korostaakseen aktiiviseksi tulleen sis.luetteloitemiä 
 Isokokoisille listaitemeille se aiheuttaa ikävän rivivaihdon */
-.active:before{
+.active:after{
 	content: ""; 
+	
+
 }
 
 /** nämä margin-leftit ovat vain tuodakseen sisennysilmettä aliotsikoidihn - voi poistella jos halajaa **/
@@ -136,11 +164,11 @@ Isokokoisille listaitemeille se aiheuttaa ikävän rivivaihdon */
 	
 }
 
-
+/* Tämä on se efekti, joka tulee maalatessa hiirellä sivulla */
 ::selection {
 	background: rgba(255,99,71,0.8);; /* Safari */
 	color:white;
-	}
+}
 ::-moz-selection {
 	background: rgba(255,99,71,0.8);; /* Firefox */
 	color:white;
