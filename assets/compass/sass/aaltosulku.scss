@@ -2,6 +2,7 @@
 $lindeman-text-color: #444;
 $line-color: rgba(255,169,131,0.4);
 
+
 footer {
 	//border-top: 1px solid $line-color;
 }
@@ -57,9 +58,31 @@ nav ul{
 
 .content-container div:target{
 	animation-duration:1.2s;
-	animation-name:in-out;
+	-moz-animation-duration:1.2s;
+	-webkit-animation-duration:1.2s;
+	 animation-name:in-out;
+	-moz-animation-name:in-out;
+	-webkit-animation-name:in-out;
 }
 
+
+@-moz-keyframes in-out {
+	from {
+		color:tomato;
+	}
+	to {
+
+	}
+}
+
+@-webkit-keyframes in-out {
+	from {
+		color:tomato;
+	}
+	to {
+
+	}
+}
 
 @keyframes in-out {
 	from {
@@ -69,6 +92,12 @@ nav ul{
 
 	}
 }
+
+
+
+
+
+
 
 
 .affix {
@@ -82,7 +111,7 @@ liitoksissa oleva divi on käyttäjän ikkunassa näkyvillä **/
 	//font-size:125%;
 	padding-left:5%;
 	border-radius: 3px 3px 3px 3px;
-	background-color: rgba(255,99,71,0.8);
+	background-color: rgba(255,99,71,1);
 	box-shadow: inset  3px 3px 3px rgba(255,169,131,0.4);
 	
 
@@ -114,14 +143,17 @@ Isokokoisille listaitemeille se aiheuttaa ikävän rivivaihdon */
 }
 
 .cat-main-title {
-	padding-bottom:5%;
+	padding-bottom:1%;
 }
 
+.sub-title {
+	margin-bottom:1%;
+	cursor:pointer;
+}
 
 .sub-title-mark{
 
 	margin-right:1px;
-	font-weight:bold;
 	color:tomato;
 	float:left;
 
@@ -129,40 +161,9 @@ Isokokoisille listaitemeille se aiheuttaa ikävän rivivaihdon */
 
 
 
-.sub-content {
-	display:none;
-	float:left;
-	height:100%;
-	width:100%;
-	margin-left:1.5%;
-	//background-color:rgba(155,155,155,0.1);
-	background-color: rgba(255,99,71,0.8);
-	box-shadow: inset 2px 2px 2px rgba(205,49,21,0.2);
-	border-radius: 3px 3px 3px 3px;
-	padding:5px;
-	margin-bottom:1.5%;
-	color:white;
-
-	a {
-		color:white;
-		font-weight:bold;
-
-	}
-
-	a:hover{
-		border-bottom:1px solid white;
-	}
-}
 
 
-.sub-title {
-	margin-left:1%;
-	cursor: pointer;
-	color: $lindeman-text-color;
-	float:left;
-	width:100%;
-	
-}
+
 
 /* Tämä on se efekti, joka tulee maalatessa hiirellä sivulla */
 ::selection {
