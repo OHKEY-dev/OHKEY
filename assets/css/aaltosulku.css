@@ -31,7 +31,13 @@ nav ul {
   font-size: 90%;
 }
 
-/* line 62, ../compass/sass/aaltosulku.scss */
+/* line 60, ../compass/sass/aaltosulku.scss */
+.list-group-item-heading a {
+  font-weight: bold;
+  font-size: 115%;
+}
+
+/* line 68, ../compass/sass/aaltosulku.scss */
 .content-container div:target {
   animation-duration: 1.2s;
   -moz-animation-duration: 1.2s;
@@ -42,24 +48,24 @@ nav ul {
 }
 
 @-moz-keyframes in-out {
-  /* line 73, ../compass/sass/aaltosulku.scss */
+  /* line 79, ../compass/sass/aaltosulku.scss */
   from {
     color: tomato;
   }
 }
 @-webkit-keyframes in-out {
-  /* line 82, ../compass/sass/aaltosulku.scss */
+  /* line 88, ../compass/sass/aaltosulku.scss */
   from {
     color: tomato;
   }
 }
 @keyframes in-out {
-  /* line 91, ../compass/sass/aaltosulku.scss */
+  /* line 97, ../compass/sass/aaltosulku.scss */
   from {
     color: tomato;
   }
 }
-/* line 106, ../compass/sass/aaltosulku.scss */
+/* line 112, ../compass/sass/aaltosulku.scss */
 .affix {
   position: fixed;
   top: 5%;
@@ -67,7 +73,7 @@ nav ul {
 
 /** .active luokka annetaan scrollspy-javascript pluginin ansiosta sis.luetteloitemille sen mukaan, mikä luetteloitemiin
 liitoksissa oleva divi on käyttäjän ikkunassa näkyvillä **/
-/* line 113, ../compass/sass/aaltosulku.scss */
+/* line 119, ../compass/sass/aaltosulku.scss */
 .active {
   padding-left: 2%;
   background-color: rgba(255, 99, 71, 0.1);
@@ -76,65 +82,65 @@ liitoksissa oleva divi on käyttäjän ikkunassa näkyvillä **/
 
 /* .active:after tai :before:n avulla voi laittaa merkkejä tai ihan mitä vain korostaakseen aktiiviseksi tulleen sis.luetteloitemiä 
 Isokokoisille listaitemeille se aiheuttaa ikävän rivivaihdon */
-/* line 136, ../compass/sass/aaltosulku.scss */
+/* line 142, ../compass/sass/aaltosulku.scss */
 .active:after {
   content: "";
 }
 
 /** nämä margin-leftit ovat vain tuodakseen sisennysilmettä aliotsikoidihn - voi poistella jos halajaa **/
 /** cat-subin ja cat-main-title padding-bottomit ovat vain scrollspyn testaamiseen - voi poistella jos halajaa**/
-/* line 144, ../compass/sass/aaltosulku.scss */
+/* line 150, ../compass/sass/aaltosulku.scss */
 .cat-sub-toc {
   margin-left: 5.5%;
 }
 
-/* line 147, ../compass/sass/aaltosulku.scss */
+/* line 153, ../compass/sass/aaltosulku.scss */
 .cat-sub {
   margin-left: 1.5%;
   margin-bottom: 5%;
   width: 85%;
 }
 
-/* line 153, ../compass/sass/aaltosulku.scss */
+/* line 159, ../compass/sass/aaltosulku.scss */
 .cat-main-title {
   margin-bottom: 5%;
   font-size: 155%;
 }
 
-/* line 158, ../compass/sass/aaltosulku.scss */
+/* line 164, ../compass/sass/aaltosulku.scss */
 .sub-title {
   margin-bottom: 1%;
   cursor: pointer;
 }
 
-/* line 163, ../compass/sass/aaltosulku.scss */
+/* line 169, ../compass/sass/aaltosulku.scss */
 .sub-title-mark {
   margin-right: 1px;
   color: tomato;
   float: left;
 }
 
-/* line 171, ../compass/sass/aaltosulku.scss */
+/* line 177, ../compass/sass/aaltosulku.scss */
 .cat-title-mark:before {
   content: "";
   float: left;
 }
 
-/* line 175, ../compass/sass/aaltosulku.scss */
+/* line 181, ../compass/sass/aaltosulku.scss */
 .cat-title-mark:after {
   content: "";
   float: right;
 }
 
 /* Tämä on se efekti, joka tulee maalatessa hiirellä sivulla */
-/* line 185, ../compass/sass/aaltosulku.scss */
+/* line 191, ../compass/sass/aaltosulku.scss */
 ::selection {
   background: rgba(255, 99, 71, 0.8);
   /* Safari */
   color: white;
 }
 
-/* line 189, ../compass/sass/aaltosulku.scss */
+/* line 195, ../compass/sass/aaltosulku.scss */
 ::-moz-selection {
   background: rgba(255, 99, 71, 0.8);
   /* Firefox */
@@ -142,7 +148,7 @@ Isokokoisille listaitemeille se aiheuttaa ikävän rivivaihdon */
 }
 
 /*Custom modaali-ikkunan asetukset */
-/* line 203, ../compass/sass/aaltosulku.scss */
+/* line 209, ../compass/sass/aaltosulku.scss */
 .modalDialog {
   position: fixed;
   font-family: Arial, Helvetica, sans-serif;
@@ -161,13 +167,13 @@ Isokokoisille listaitemeille se aiheuttaa ikävän rivivaihdon */
   color: #444444;
 }
 
-/* line 221, ../compass/sass/aaltosulku.scss */
+/* line 227, ../compass/sass/aaltosulku.scss */
 .modalDialog:target {
   opacity: 1;
   pointer-events: auto;
 }
 
-/* line 226, ../compass/sass/aaltosulku.scss */
+/* line 232, ../compass/sass/aaltosulku.scss */
 .modalDialog > div {
   width: 90%;
   position: relative;
@@ -177,7 +183,7 @@ Isokokoisille listaitemeille se aiheuttaa ikävän rivivaihdon */
   background: #fff;
 }
 
-/* line 236, ../compass/sass/aaltosulku.scss */
+/* line 242, ../compass/sass/aaltosulku.scss */
 .close {
   background: #606061;
   color: #FFFFFF;
@@ -197,7 +203,7 @@ Isokokoisille listaitemeille se aiheuttaa ikävän rivivaihdon */
   box-shadow: 1px 1px 3px #000;
 }
 
-/* line 255, ../compass/sass/aaltosulku.scss */
+/* line 261, ../compass/sass/aaltosulku.scss */
 .close:hover {
   background: #00d9ff;
 }

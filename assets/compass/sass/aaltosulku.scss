@@ -52,12 +52,18 @@ nav ul{
 	
 }
 
-.list-group-item a {
-	//transition: padding-left 1s;
+
+
+
+.list-group-item-heading {
 	
+	a {
+		font-weight:bold;
+		font-size:115%;
+	}
+
+
 }
-
-
 
 .content-container div:target{
 	animation-duration:1.2s;
