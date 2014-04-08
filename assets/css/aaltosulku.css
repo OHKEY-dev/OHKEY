@@ -168,8 +168,14 @@ Isokokoisille listaitemeille se aiheuttaa ikävän rivivaihdon */
   color: white;
 }
 
+/* line 227, ../compass/sass/aaltosulku.scss */
+.p-footer {
+  text-align: left;
+  font-size: 70%;
+}
+
 /*Custom modaali-ikkunan asetukset */
-/* line 228, ../compass/sass/aaltosulku.scss */
+/* line 241, ../compass/sass/aaltosulku.scss */
 .modalDialog {
   position: fixed;
   font-family: Arial, Helvetica, sans-serif;
@@ -188,13 +194,13 @@ Isokokoisille listaitemeille se aiheuttaa ikävän rivivaihdon */
   color: #444444;
 }
 
-/* line 246, ../compass/sass/aaltosulku.scss */
+/* line 259, ../compass/sass/aaltosulku.scss */
 .modalDialog:target {
   opacity: 1;
   pointer-events: auto;
 }
 
-/* line 251, ../compass/sass/aaltosulku.scss */
+/* line 264, ../compass/sass/aaltosulku.scss */
 .modalDialog > div {
   width: 90%;
   position: relative;
@@ -204,7 +210,7 @@ Isokokoisille listaitemeille se aiheuttaa ikävän rivivaihdon */
   background: #fff;
 }
 
-/* line 261, ../compass/sass/aaltosulku.scss */
+/* line 274, ../compass/sass/aaltosulku.scss */
 .close {
   background: #606061;
   color: #FFFFFF;
@@ -224,7 +230,7 @@ Isokokoisille listaitemeille se aiheuttaa ikävän rivivaihdon */
   box-shadow: 1px 1px 3px #000;
 }
 
-/* line 280, ../compass/sass/aaltosulku.scss */
+/* line 293, ../compass/sass/aaltosulku.scss */
 .close:hover {
   background: #00d9ff;
 }
