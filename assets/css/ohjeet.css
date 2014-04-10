@@ -1,26 +1,26 @@
-/* line 1, ../compass/sass/ohjeet.scss */
+/* line 3, ../compass/sass/ohjeet.scss */
 header {
   background-color: rgba(255, 99, 71, 0.9);
   color: white;
 }
 
-/* line 6, ../compass/sass/ohjeet.scss */
+/* line 8, ../compass/sass/ohjeet.scss */
 nav ul li a {
   color: white;
 }
 
-/* line 10, ../compass/sass/ohjeet.scss */
+/* line 12, ../compass/sass/ohjeet.scss */
 section {
   border: none;
   margin-bottom: 5%;
 }
 
-/* line 19, ../compass/sass/ohjeet.scss */
+/* line 21, ../compass/sass/ohjeet.scss */
 .ruutu-12-tablet {
   padding-bottom: 0;
 }
 
-/* line 23, ../compass/sass/ohjeet.scss */
+/* line 25, ../compass/sass/ohjeet.scss */
 #header-line2 {
   width: 100%;
   margin: 0 auto;
