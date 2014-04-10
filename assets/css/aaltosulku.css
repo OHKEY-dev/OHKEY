@@ -9,23 +9,25 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 
-/* line 14, ../compass/sass/aaltosulku.scss */
-header {
-  border-bottom: 15px solid rgba(255, 99, 71, 0.9);
+/* line 18, ../compass/sass/aaltosulku.scss */
+#header-line {
+  width: 100%;
+  margin: 0 auto;
+  border-top: 15px solid rgba(255, 99, 71, 0.9);
 }
 
-/* line 20, ../compass/sass/aaltosulku.scss */
+/* line 26, ../compass/sass/aaltosulku.scss */
 .sub-title-mark:before {
-  content: "▸";
-  font-weight: bolder;
+  content: ">>";
+  font-weight: bold;
 }
 
-/* line 29, ../compass/sass/aaltosulku.scss */
+/* line 38, ../compass/sass/aaltosulku.scss */
 nav {
   text-align: center;
 }
 
-/* line 34, ../compass/sass/aaltosulku.scss */
+/* line 43, ../compass/sass/aaltosulku.scss */
 nav ul li {
   display: inline-block;
   text-align: center;
@@ -34,7 +36,7 @@ nav ul li {
   margin: auto;
 }
 
-/* line 42, ../compass/sass/aaltosulku.scss */
+/* line 51, ../compass/sass/aaltosulku.scss */
 nav ul {
   margin: auto;
   display: inline-block;
@@ -45,20 +47,20 @@ nav ul {
   float: right;
 }
 
-/* line 65, ../compass/sass/aaltosulku.scss */
+/* line 64, ../compass/sass/aaltosulku.scss */
 .toc-ul li {
   list-style: none;
   transition: padding-left 0.5s;
   font-size: 90%;
 }
 
-/* line 79, ../compass/sass/aaltosulku.scss */
+/* line 78, ../compass/sass/aaltosulku.scss */
 .list-group-item-heading a {
   font-weight: bold;
   font-size: 115%;
 }
 
-/* line 87, ../compass/sass/aaltosulku.scss */
+/* line 86, ../compass/sass/aaltosulku.scss */
 .content-container div:target {
   animation-duration: 1.2s;
   -moz-animation-duration: 1.2s;
@@ -69,24 +71,24 @@ nav ul {
 }
 
 @-moz-keyframes in-out {
-  /* line 98, ../compass/sass/aaltosulku.scss */
+  /* line 97, ../compass/sass/aaltosulku.scss */
   from {
     color: tomato;
   }
 }
 @-webkit-keyframes in-out {
-  /* line 107, ../compass/sass/aaltosulku.scss */
+  /* line 106, ../compass/sass/aaltosulku.scss */
   from {
     color: tomato;
   }
 }
 @keyframes in-out {
-  /* line 116, ../compass/sass/aaltosulku.scss */
+  /* line 115, ../compass/sass/aaltosulku.scss */
   from {
     color: tomato;
   }
 }
-/* line 131, ../compass/sass/aaltosulku.scss */
+/* line 130, ../compass/sass/aaltosulku.scss */
 .affix {
   position: fixed;
   top: 5%;
@@ -94,7 +96,7 @@ nav ul {
 
 /** .active luokka annetaan scrollspy-javascript pluginin ansiosta sis.luetteloitemille sen mukaan, mikä luetteloitemiin
 liitoksissa oleva divi on käyttäjän ikkunassa näkyvillä **/
-/* line 138, ../compass/sass/aaltosulku.scss */
+/* line 137, ../compass/sass/aaltosulku.scss */
 .active {
   padding-left: 5%;
   background-color: rgba(255, 99, 71, 0.1);
@@ -103,32 +105,32 @@ liitoksissa oleva divi on käyttäjän ikkunassa näkyvillä **/
 
 /* .active:after tai :before:n avulla voi laittaa merkkejä tai ihan mitä vain korostaakseen aktiiviseksi tulleen sis.luetteloitemiä 
 Isokokoisille listaitemeille se aiheuttaa ikävän rivivaihdon */
-/* line 161, ../compass/sass/aaltosulku.scss */
+/* line 160, ../compass/sass/aaltosulku.scss */
 .active:after {
   content: "";
 }
 
 /** nämä margin-leftit ovat vain tuodakseen sisennysilmettä aliotsikoidihn - voi poistella jos halajaa **/
 /** cat-subin ja cat-main-title padding-bottomit ovat vain scrollspyn testaamiseen - voi poistella jos halajaa**/
-/* line 169, ../compass/sass/aaltosulku.scss */
+/* line 168, ../compass/sass/aaltosulku.scss */
 .cat-sub-toc {
   margin-left: 5.5%;
 }
 
-/* line 172, ../compass/sass/aaltosulku.scss */
+/* line 171, ../compass/sass/aaltosulku.scss */
 .cat-sub {
   margin-left: 1.5%;
   margin-bottom: 5%;
   width: 85%;
 }
 
-/* line 178, ../compass/sass/aaltosulku.scss */
+/* line 177, ../compass/sass/aaltosulku.scss */
 .cat-main-title {
-  margin-bottom: 5%;
+  margin-bottom: 8%;
   font-size: 155%;
 }
 
-/* line 183, ../compass/sass/aaltosulku.scss */
+/* line 182, ../compass/sass/aaltosulku.scss */
 .sub-title {
   margin-bottom: 1%;
   cursor: pointer;
@@ -168,14 +170,20 @@ Isokokoisille listaitemeille se aiheuttaa ikävän rivivaihdon */
   color: white;
 }
 
-/* line 227, ../compass/sass/aaltosulku.scss */
+/* line 225, ../compass/sass/aaltosulku.scss */
+.footer-top {
+  margin-top: 60%;
+  width: 100%;
+}
+
+/* line 230, ../compass/sass/aaltosulku.scss */
 .p-footer {
   text-align: left;
   font-size: 70%;
 }
 
 /*Custom modaali-ikkunan asetukset */
-/* line 241, ../compass/sass/aaltosulku.scss */
+/* line 244, ../compass/sass/aaltosulku.scss */
 .modalDialog {
   position: fixed;
   font-family: Arial, Helvetica, sans-serif;
@@ -194,13 +202,13 @@ Isokokoisille listaitemeille se aiheuttaa ikävän rivivaihdon */
   color: #444444;
 }
 
-/* line 259, ../compass/sass/aaltosulku.scss */
+/* line 262, ../compass/sass/aaltosulku.scss */
 .modalDialog:target {
   opacity: 1;
   pointer-events: auto;
 }
 
-/* line 264, ../compass/sass/aaltosulku.scss */
+/* line 267, ../compass/sass/aaltosulku.scss */
 .modalDialog > div {
   width: 90%;
   position: relative;
@@ -210,7 +218,7 @@ Isokokoisille listaitemeille se aiheuttaa ikävän rivivaihdon */
   background: #fff;
 }
 
-/* line 274, ../compass/sass/aaltosulku.scss */
+/* line 277, ../compass/sass/aaltosulku.scss */
 .close {
   background: #606061;
   color: #FFFFFF;
@@ -230,7 +238,7 @@ Isokokoisille listaitemeille se aiheuttaa ikävän rivivaihdon */
   box-shadow: 1px 1px 3px #000;
 }
 
-/* line 293, ../compass/sass/aaltosulku.scss */
+/* line 296, ../compass/sass/aaltosulku.scss */
 .close:hover {
   background: #00d9ff;
 }

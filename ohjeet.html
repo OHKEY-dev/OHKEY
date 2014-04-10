@@ -42,7 +42,7 @@
 		</div>
 	</div>
 	</header>
-	
+	<div id="header-line2"></div>
 	
 	
 
@@ -113,7 +113,7 @@
 											</div>
 									</div>
 									<div class="cat-sub">
-										<div class="cat-sub-title"><h6>Notepad ++</h6></div>
+										<div class="cat-sub-title"><h6>Notepad</h6></div>
 										<!-- cat-sub-content on sama kuin category-sub-table. uudeölleennimesin sen kuvaavemmaksi, sillä välttämättä divin sisältö ei ole table -->
 											<div class="sub-title">
 												<div class="sub-title-mark"></div>
@@ -186,15 +186,26 @@
 												<div class="rivi">GitHubin käyttöönotto</div>
 											</div>
 									</div>
+												<div class="cat-sub">
+										<div class="cat-sub-title"><h6>CVS</h6></div>
+										<!-- cat-sub-content on sama kuin category-sub-table. uudeölleennimesin sen kuvaavemmaksi, sillä välttämättä divin sisältö ei ole table -->
+										<div class="sub-title">
+												<div class="sub-title-mark"></div>
+												<div class="rivi">Peruskomennot</div>
+											</div>
+
+											<div class="sub-title">
+												<div class="sub-title-mark"></div>
+												<div class="rivi">CVS käyttöönotto Eclispessä</div>
+											</div>
+									</div>
 							
 								</div><!-- .cat-main -->
-							
+					
 						</div><!-- .ruutu-12-tablet -->
 					</div><!-- .rivi -->
 					</section>
-					<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
-					<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
-					<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+						<div class="footer-top"></div>
 				</div><!-- .ruutu-10-tablet -->
 
 			</div><!-- .content-container -->
@@ -227,27 +238,34 @@
 
 		<script>
 		$(function(){
-			var mainId = 0;
-			var subId = 0;
+			//var mainId = 0;
+			//var subId = 0;
 			$(".cat-main").each(function(){
-				mainId = mainId+1;
-				$(this).attr("id","cat-main-num-"+mainId);
+				//mainId = mainId+1;
+				//$(this).attr("id","cat-main-num-"+mainId);
+
 				var thisText = $(this).children(".cat-main-title").text();
-				var thisTrimmerText = $(this).children(".cat-main-title").text().replace(/ /g, '');
-				var Href="#cat-main-num-"+mainId;
+				var thisTrimmerText = $(this).children(".cat-main-title").text().replace(/ /g, '').trim();
+				$(this).attr("id",thisTrimmerText);
+				//var Href="#cat-main-num-"+mainId;
 				var Class="list-group-item";
 				var hClass="list-group-item-heading";
-				$(".toc-ul").append('<li class="' + Class +' '+ hClass +'"><a href="' + Href + '"><div class="cat-title-mark"></div>' + thisText + '</a></li>');
+				$(".toc-ul").append('<li class="' + Class +' '+ hClass +'"><a href="#' + thisTrimmerText + '"><div class="cat-title-mark"></div>' + thisText + '</a></li>');
 
 				$(this).children().each(function(){
 							//if-lause on tässä välttämätön!
 							if($(this).children(".cat-sub-title").text().length > 0){
-								subId = subId + 1;
-								$(this).attr("id","cat-sub-num-"+subId);
+								//subId = subId + 1;
+								//$(this).attr("id","cat-sub-num-"+subId);
 								var thisText = $(this).children(".cat-sub-title").text();
-								var Href="#cat-sub-num-"+subId;
+								var thisTrimmerText = $(this).children(".cat-sub-title").text().replace(/ /g, '').trim();
+								//var Href="#cat-sub-num-"+subId;
 								var Class="list-group-item";
-								$(".toc-ul").append('<li class="' + Class + ' cat-sub-toc"><div class="cat-title-mark"></div><a href="' + Href + '" class="' + Class + '">' + thisText + '</a></li>'); 
+								$(this).attr("id",thisTrimmerText);
+								$(".toc-ul").append('<li class="' + Class + ' cat-sub-toc"><div class="cat-title-mark"></div><a href="#' + thisTrimmerText + '" class="' + Class + '">' + thisText + '</a></li>'); 
+								//alert(thisTrimmerText);
+								
+
 							}
 							else {
 								return;	

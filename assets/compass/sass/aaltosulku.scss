@@ -3,23 +3,32 @@ $lindeman-text-color: #444;
 $line-color: rgba(255,169,131,0.4);
 
 h1, h2, h3, h4, h5, h6{
-font-family: 'Open Sans', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 
 }
 
 body {
-font-family: 'Open Sans', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 }
 
 header {
 
-border-bottom:15px solid rgba(255,99,71,0.9);
-
 }
 
+#header-line{
+	width: 100%;
+	margin: 0 auto;
+	border-top:15px solid rgba(255,99,71,0.9);
+}
+
+
+
 .sub-title-mark:before {
-	content:"▸";
-	font-weight:bolder;
+	content:">>";
+	//content:"[-]";
+	font-weight:bold;
+
+
 }
 
 footer {
@@ -51,16 +60,6 @@ nav ul{
 
 
 
-#ohjeet .ruutu-10-tablet {
-	//background-color: rgba(255,99,71,0.02);
-	//background-color:rgba(155,155,155,0.1);
-	//box-shadow: inset 2px 2px 2px rgba(255,99,71,0.2);
-		//box-shadow:  inset 5px 0 0 0 5px  rgba(255,169,131,0.3);
-	//border-radius: 3px 3px 3px 3px;
-	//border-left: 1px solid $line-color;
-	//border-left: 1px solid rgba(0,0,0,0.1);
-
-}
 
 .toc-ul li {
 	list-style: none;
@@ -88,7 +87,7 @@ nav ul{
 	animation-duration:1.2s;
 	-moz-animation-duration:1.2s;
 	-webkit-animation-duration:1.2s;
-	 animation-name:in-out;
+	animation-name:in-out;
 	-moz-animation-name:in-out;
 	-webkit-animation-name:in-out;
 }
@@ -176,13 +175,14 @@ Isokokoisille listaitemeille se aiheuttaa ikävän rivivaihdon */
 }
 
 .cat-main-title {
-	margin-bottom:5%;
+	margin-bottom:8%;
 	font-size:155%;
 }
 
 .sub-title {
 	margin-bottom:1%;
 	cursor:pointer;
+
 }
 
 .sub-title-mark{
@@ -221,8 +221,11 @@ Isokokoisille listaitemeille se aiheuttaa ikävän rivivaihdon */
 
 
 
-
-
+//Tällä tehdään tyhjää tilaa ohjeluettelon alle, jotta scrollspy toimii mukavasti
+.footer-top {
+	margin-top:60%;
+	width:100%;
+}
 
 .p-footer {
 	text-align:left;
