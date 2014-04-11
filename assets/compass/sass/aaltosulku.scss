@@ -1,62 +1,29 @@
 @import 'compass/css3';
 $lindeman-text-color: #444;
-$line-color: rgba(255,169,131,0.4);
-$custom-main: rgba(255,99,71,0.9);
-$custom-bg: tomato;
-$custom-text: grey;
-$custom-link: tomato;
-$border-right:5px solid rgba(245,89,61,0.9);
+$main: rgba(28,20,13,1);
+$bg: rgba(183,212,87,1);
+$text: grey;
+$link: rgba(183,212,87,1);
+$right: 5px solid rgba(28,20,13,1);
 
-h1, h2, h3, h4, h5, h6{
-	font-family: 'Open Sans', sans-serif;
-
-}
 
 body {
 	font-family: 'Open Sans', sans-serif;
-	background-color:oldlace;
+	background-color:rgba(242,244,225,1);
 }
 
-a {
-	color:$custom-link;
-	
-}
 
-.intro {
-	background-color:$custom-bg;
-}
-
-#header-line{
-	width: 100%;
-	margin: 0 auto;
-	//border-top:15px solid rgba(255,99,71,0.9);
-	border-top:15px solid $custom-main;
-}
-
-.ruutu-4-tablet{
-	//transition: padding-left 0.5s;
-}
-
-.ruutu-4-tablet:hover{
-	//background-color: rgba(255,99,71,0.1);
-//border-right:5px solid rgba(220,69,41,0.8);
-border-right: $border-right;
-background-color:$custom-bg;
-color:white;
-//padding-left:2.5%;
-}
-
-.sub-title-mark:before {
-	content:">>";
-	//content:"[-]";
-	font-weight:bold;
-
+/* Tämä on se efekti, joka tulee maalatessa hiirellä sivulla */
+::selection {
+	background: $bg; /* Safari */
+	color:$bg;
 
 }
-
-footer {
-	//border-top: 1px solid $line-color;
+::-moz-selection {
+	background: $bg; /* Firefox */
+	color:white;
 }
+
 
 nav {
 	text-align: center;
@@ -81,240 +48,18 @@ nav ul{
 	float:right;
 }
 
-
-
-
-.toc-ul li {
-	list-style: none;
-	transition: padding-left 0.5s;
-	//transition: font-size 0.5s;
-	font-size:90%;
-
-	
-}
-
-
-
-
-.list-group-item-heading {
-	
-	a {
-		font-weight:bold;
-		font-size:115%;
-	}
-
+h1, h2, h3, h4, h5, h6{
+	font-family: 'Open Sans', sans-serif;
 
 }
 
-.content-container div:target{
-	animation-duration:1.2s;
-	-moz-animation-duration:1.2s;
-	-webkit-animation-duration:1.2s;
-	animation-name:in-out;
-	-moz-animation-name:in-out;
-	-webkit-animation-name:in-out;
-}
-
-
-@-moz-keyframes in-out {
-	from {
-		color:tomato;
-	}
-	to {
-
-	}
-}
-
-@-webkit-keyframes in-out {
-	from {
-		color:tomato;
-	}
-	to {
-
-	}
-}
-
-@keyframes in-out {
-	from {
-		color:tomato;
-	}
-	to {
-
-	}
-}
-
-
-
-
-
-
-
-
-.affix {
-	position:fixed;
-	top:5%;
-}
-
-/** .active luokka annetaan scrollspy-javascript pluginin ansiosta sis.luetteloitemille sen mukaan, mikä luetteloitemiin
-liitoksissa oleva divi on käyttäjän ikkunassa näkyvillä **/
-.active {
-	//font-size:125%;
-	padding-left:5%;
-	//border-radius: 3px 3px 3px 3px;
-	background-color: rgba(255,99,71,0.8);
-	//box-shadow: inset  3px 3px 3px rgba(255,169,131,0.4);
-	//border-left:3px solid tomato;
-	//border-right:3px solid tomato;
-	//border-right:5px solid rgba(255,99,71,0.9);
-	border-right:5px solid rgba(245,89,61,0.9);
-	//background-color:rgba(255,169,131,0.1);
-	//background-color: rgba(150,150,150,0.1);
-	//border-left:5px solid rgba(200,200,200,0.5);
-}
-
-.active a {
-	//font-weight:bold;
-	//color:$lindeman-text-color;
-	color:white;
-	
-}
-
-/* .active:after tai :before:n avulla voi laittaa merkkejä tai ihan mitä vain korostaakseen aktiiviseksi tulleen sis.luetteloitemiä 
-Isokokoisille listaitemeille se aiheuttaa ikävän rivivaihdon */
-.active:after{
-	content: ""; 
-
-
-}
-
-/** nämä margin-leftit ovat vain tuodakseen sisennysilmettä aliotsikoidihn - voi poistella jos halajaa **/
-/** cat-subin ja cat-main-title padding-bottomit ovat vain scrollspyn testaamiseen - voi poistella jos halajaa**/
-.cat-sub-toc {
-	margin-left:5.5%;
-}
-.cat-sub {
-	margin-left:1.5%;
-	margin-bottom:5%;
-	width:85%;
-}
-
-.cat-main-title {
-	margin-bottom:8%;
-	font-size:155%;
-}
-
-.sub-title {
-	margin-bottom:1%;
-	cursor:pointer;
-
-}
-
-.sub-title-mark{
-
-	margin-right:1px;
-	color:tomato;
-	float:left;
-
-}
-
-.cat-title-mark:before {
-	content:"";
-	float:left;
-}
-.cat-title-mark:after {
-	content:"";
-	float:right;
-}
-
-
-
-
-
-/* Tämä on se efekti, joka tulee maalatessa hiirellä sivulla */
-::selection {
-	background: rgba(255,99,71,0.8);; /* Safari */
-	color:white;
-}
-::-moz-selection {
-	background: rgba(255,99,71,0.8);; /* Firefox */
-	color:white;
-}
-
-
-
-
-
-
-//Tällä tehdään tyhjää tilaa ohjeluettelon alle, jotta scrollspy toimii mukavasti
-.footer-top {
-	margin-top:60%;
-	width:100%;
-}
 
 .p-footer {
 	text-align:left;
 	font-size:70%;
 }
 
-
-
-
-
-
-
-
-
-/*Custom modaali-ikkunan asetukset */
-.modalDialog {
-	position: fixed;
-	font-family: Arial, Helvetica, sans-serif;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-	background: rgba(0,0,0,0.8);
-	z-index: 99999;
-	opacity:0;
-	-webkit-transition: opacity 400ms ease-in;
-	-moz-transition: opacity 400ms ease-in;
-	transition: opacity 400ms ease-in;
-	pointer-events: none;
-	overflow:scroll;
-	color: $lindeman-text-color;
+a {
+	color:grey;
+	
 }
-
-.modalDialog:target {
-	opacity:1;
-	pointer-events: auto;
-}
-
-.modalDialog > div {
-	width: 90%;
-	position: relative;
-	margin: 10% auto;
-	padding: 5px 20px 13px 20px;
-	border-radius: 10px;
-	background: #fff;
-
-}
-
-.close {
-	background: #606061;
-	color: #FFFFFF;
-	line-height: 25px;
-	position: absolute;
-	right: -12px;
-	text-align: center;
-	top: -10px;
-	width: 24px;
-	text-decoration: none;
-	font-weight: bold;
-	-webkit-border-radius: 12px;
-	-moz-border-radius: 12px;
-	border-radius: 12px;
-	-moz-box-shadow: 1px 1px 3px #000;
-	-webkit-box-shadow: 1px 1px 3px #000;
-	box-shadow: 1px 1px 3px #000;
-}
-
-.close:hover { background: #00d9ff; }

@@ -1,0 +1,21 @@
+@import 'compass/css3';
+@import 'aaltosulku.scss';
+
+
+
+a {
+	color:$link;
+	
+}
+
+.intro {
+	background-color:$bg;
+}
+
+#header-line{
+	width: 100%;
+	margin: 0 auto;
+	border-top:15px solid $main;
+}
+
+

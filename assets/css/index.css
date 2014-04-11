@@ -60,3 +60,20 @@ h1, h2, h3, h4, h5, h6 {
 a {
   color: grey;
 }
+
+/* line 6, ../compass/sass/index.scss */
+a {
+  color: #b7d457;
+}
+
+/* line 11, ../compass/sass/index.scss */
+.intro {
+  background-color: #b7d457;
+}
+
+/* line 15, ../compass/sass/index.scss */
+#header-line {
+  width: 100%;
+  margin: 0 auto;
+  border-top: 15px solid #1c140d;
+}

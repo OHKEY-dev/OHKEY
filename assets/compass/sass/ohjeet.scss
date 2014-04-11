@@ -1,7 +1,7 @@
-
+@import 'aaltosulku.scss';
 
 header {
-background-color: rgba(255,99,71,0.9);
+background-color: $bg;
 color:white;
 }
 
@@ -25,8 +25,163 @@ section {
 #header-line2{
 	width: 100%;
 	margin: 0 auto;
-	border-bottom:15px solid rgba(245,89,61,0.9);
-	//border-top:2px solid rgba(245,89,61,0.5);
-	//height:20px;
-	//background-color:rgba(245,89,61,0.5);
+	border-bottom:15px solid $main;
 }
+
+
+//Tällä tehdään tyhjää tilaa ohjeluettelon alle, jotta scrollspy toimii mukavasti
+.footer-top {
+	margin-top:60%;
+	width:100%;
+}
+
+
+.affix {
+	position:fixed;
+	top:5%;
+}
+
+/** .active luokka annetaan scrollspy-javascript pluginin ansiosta sis.luetteloitemille sen mukaan, mikä luetteloitemiin
+liitoksissa oleva divi on käyttäjän ikkunassa näkyvillä **/
+.active {
+	//font-size:125%;
+	padding-left:5%;
+	//border-radius: 3px 3px 3px 3px;
+	background-color: $bg;
+	//box-shadow: inset  3px 3px 3px rgba(255,169,131,0.4);
+	//border-left:3px solid tomato;
+	//border-right:3px solid tomato;
+	//border-right:5px solid rgba(255,99,71,0.9);
+	border-right:5px solid $main;
+	//background-color:rgba(255,169,131,0.1);
+	//background-color: rgba(150,150,150,0.1);
+	//border-left:5px solid rgba(200,200,200,0.5);
+}
+
+.active a {
+	//font-weight:bold;
+	//color:$lindeman-text-color;
+	color:white;
+	
+}
+
+/* .active:after tai :before:n avulla voi laittaa merkkejä tai ihan mitä vain korostaakseen aktiiviseksi tulleen sis.luetteloitemiä 
+Isokokoisille listaitemeille se aiheuttaa ikävän rivivaihdon */
+.active:after{
+	content: ""; 
+
+
+}
+
+/** nämä margin-leftit ovat vain tuodakseen sisennysilmettä aliotsikoidihn - voi poistella jos halajaa **/
+/** cat-subin ja cat-main-title padding-bottomit ovat vain scrollspyn testaamiseen - voi poistella jos halajaa**/
+.cat-sub-toc {
+	margin-left:5.5%;
+}
+.cat-sub {
+	margin-left:1.5%;
+	margin-bottom:5%;
+	width:85%;
+}
+
+.cat-main-title {
+	margin-bottom:8%;
+	font-size:155%;
+}
+
+.sub-title {
+	margin-bottom:1%;
+	cursor:pointer;
+
+}
+
+.sub-title-mark{
+
+	margin-right:1px;
+	color:$bg;
+	float:left;
+
+}
+
+.cat-title-mark:before {
+	content:"";
+	float:left;
+}
+.cat-title-mark:after {
+	content:"";
+	float:right;
+}
+
+
+
+.toc-ul li {
+	list-style: none;
+	transition: padding-left 0.5s;
+	font-size:90%;
+}
+
+
+
+
+.list-group-item-heading {
+	
+	a {
+		font-weight:bold;
+		font-size:115%;
+	}
+
+
+}
+
+.content-container div:target{
+	animation-duration:1.2s;
+	-moz-animation-duration:1.2s;
+	-webkit-animation-duration:1.2s;
+	animation-name:in-out;
+	-moz-animation-name:in-out;
+	-webkit-animation-name:in-out;
+}
+
+
+@-moz-keyframes in-out {
+	from {
+		color:$bg;
+	}
+	to {
+
+	}
+}
+
+@-webkit-keyframes in-out {
+	from {
+		color:$bg;
+	}
+	to {
+
+	}
+}
+
+@keyframes in-out {
+	from {
+		color:$bg;
+	}
+	to {
+
+	}
+}
+
+
+.ruutu-4-tablet:hover{
+border-right: $right;
+background-color:$bg;
+color:white;
+}
+
+.sub-title-mark:before {
+	content:">>";
+	//content:"[-]";
+	font-weight:bold;
+
+
+}
+
