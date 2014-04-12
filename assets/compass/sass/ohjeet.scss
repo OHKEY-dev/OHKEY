@@ -1,21 +1,36 @@
 @import 'aaltosulku.scss';
+body {
+ border-top:5px solid rgba(0,0,0,0.0);
+ background-color:$body + 50;
+
+}
 
 header {
 background-color: $bg;
-color:white;
+	background: linear-gradient(45deg, $bg + 180 25%,
+    $bg + 150 25%, $bg  + 150 50%, 
+    $bg + 180 50%, $bg + 180 75%, 
+    $bg + 150 75%);
+background-size:10px 10px;
+
+
+
+color:$lindeman-text-color; // muuta tämä
 }
 
 nav ul li a{
-  color:white
+color:$bg; //muuta tämä
+
+//background:$bg;
+
+padding-left:5px;
+padding-right:5px;
+
 }
 
 section {
-	//border-bottom:1px solid rgba(255,99,71,0.5);
 	border:none;
 	margin-bottom:5%;
-
-
-
 }
 
 .ruutu-12-tablet {
@@ -25,7 +40,7 @@ section {
 #header-line2{
 	width: 100%;
 	margin: 0 auto;
-	border-bottom:15px solid $main;
+	border-bottom:15px solid $decoration-line;
 }
 
 
@@ -44,26 +59,26 @@ section {
 /** .active luokka annetaan scrollspy-javascript pluginin ansiosta sis.luetteloitemille sen mukaan, mikä luetteloitemiin
 liitoksissa oleva divi on käyttäjän ikkunassa näkyvillä **/
 .active {
-	//font-size:125%;
 	padding-left:5%;
-	//border-radius: 3px 3px 3px 3px;
-	background-color: $bg;
-	//box-shadow: inset  3px 3px 3px rgba(255,169,131,0.4);
+	//font-size:125%;
+
+	//background-color: $bg;
+	box-shadow: 2px 2px 2px $decoration-line ;
 	//border-left:3px solid tomato;
 	//border-right:3px solid tomato;
 	//border-right:5px solid rgba(255,99,71,0.9);
-	border-right:5px solid $main;
-	//background-color:rgba(255,169,131,0.1);
+	//border-right:2px solid $link;
+	//border-bottom:2px solid $link;
+	background-color: $bg;
 	//background-color: rgba(150,150,150,0.1);
 	//border-left:5px solid rgba(200,200,200,0.5);
+a{
+
+	color:white;
 }
 
-.active a {
-	//font-weight:bold;
-	//color:$lindeman-text-color;
-	color:white;
-	
 }
+
 
 /* .active:after tai :before:n avulla voi laittaa merkkejä tai ihan mitä vain korostaakseen aktiiviseksi tulleen sis.luetteloitemiä 
 Isokokoisille listaitemeille se aiheuttaa ikävän rivivaihdon */
@@ -98,7 +113,7 @@ Isokokoisille listaitemeille se aiheuttaa ikävän rivivaihdon */
 .sub-title-mark{
 
 	margin-right:1px;
-	color:$bg;
+	color:$link;
 	float:left;
 
 }
@@ -118,19 +133,24 @@ Isokokoisille listaitemeille se aiheuttaa ikävän rivivaihdon */
 	list-style: none;
 	transition: padding-left 0.5s;
 	font-size:90%;
+
+
 }
 
 
-
+.list-group-item {
+		color:$bg;
+}
 
 .list-group-item-heading {
 	
 	a {
 		font-weight:bold;
 		font-size:115%;
+
 	}
 
-
+color:$bg;
 }
 
 .content-container div:target{
@@ -171,17 +191,8 @@ Isokokoisille listaitemeille se aiheuttaa ikävän rivivaihdon */
 }
 
 
-.ruutu-4-tablet:hover{
-border-right: $right;
-background-color:$bg;
-color:white;
-}
-
 .sub-title-mark:before {
 	content:">>";
-	//content:"[-]";
 	font-weight:bold;
-
-
 }
 

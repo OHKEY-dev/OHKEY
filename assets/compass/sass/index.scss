@@ -3,19 +3,35 @@
 
 
 
-a {
-	color:$link;
-	
+body {
+	border-top:5px solid rgba(0,0,0,0.0);
 }
 
 .intro {
-	background-color:$bg;
+background-color: $bg;
+	background: linear-gradient(45deg, $bg + 180 25%,
+    $bg + 150 25%, $bg  + 150 50%, 
+    $bg + 180 50%, $bg + 180 75%, 
+    $bg + 150 75%);
+background-size:10px 10px;
+color:$lindeman-text-color;
+border-bottom:5px solid $bg + 150;
+
+
 }
 
 #header-line{
 	width: 100%;
 	margin: 0 auto;
-	border-top:15px solid $main;
+	border-top:15px solid $decoration-line;
+//border-bottom:1px dashed $decoration-line;
 }
 
 
+
+.ruutu-4-tablet:hover{
+border-right: $decoration-line - 250;
+background-color:$bg + 10;
+color:white;
+
+}

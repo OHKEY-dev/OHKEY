@@ -1,31 +1,39 @@
 @charset "UTF-8";
-/* line 10, ../compass/sass/aaltosulku.scss */
+/*
+$lindeman-text-color: #444;
+$main: rgba(28,20,13,1);
+$bg: rgba(183,212,87,1);
+$text: grey;
+$link: rgba(183,212,87,1);
+$right: 5px solid rgba(28,20,13,1);
+*/
+/* line 19, ../compass/sass/aaltosulku.scss */
 body {
   font-family: 'Open Sans', sans-serif;
-  background-color: #f2f4e1;
+  background-color: rgba(255, 255, 214, 0.2);
 }
 
 /* Tämä on se efekti, joka tulee maalatessa hiirellä sivulla */
-/* line 17, ../compass/sass/aaltosulku.scss */
+/* line 27, ../compass/sass/aaltosulku.scss */
 ::selection {
-  background: #b7d457;
+  background: tomato;
   /* Safari */
-  color: #b7d457;
+  color: tomato;
 }
 
-/* line 22, ../compass/sass/aaltosulku.scss */
+/* line 32, ../compass/sass/aaltosulku.scss */
 ::-moz-selection {
-  background: #b7d457;
+  background: tomato;
   /* Firefox */
   color: white;
 }
 
-/* line 28, ../compass/sass/aaltosulku.scss */
+/* line 38, ../compass/sass/aaltosulku.scss */
 nav {
   text-align: center;
 }
 
-/* line 33, ../compass/sass/aaltosulku.scss */
+/* line 43, ../compass/sass/aaltosulku.scss */
 nav ul li {
   display: inline-block;
   text-align: center;
@@ -34,7 +42,7 @@ nav ul li {
   margin: auto;
 }
 
-/* line 41, ../compass/sass/aaltosulku.scss */
+/* line 51, ../compass/sass/aaltosulku.scss */
 nav ul {
   margin: auto;
   display: inline-block;
@@ -45,18 +53,28 @@ nav ul {
   float: right;
 }
 
-/* line 51, ../compass/sass/aaltosulku.scss */
+/* line 61, ../compass/sass/aaltosulku.scss */
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Open Sans', sans-serif;
 }
 
-/* line 57, ../compass/sass/aaltosulku.scss */
+/* line 67, ../compass/sass/aaltosulku.scss */
 .p-footer {
   text-align: left;
   font-size: 70%;
 }
 
-/* line 62, ../compass/sass/aaltosulku.scss */
+/* line 72, ../compass/sass/aaltosulku.scss */
 a {
-  color: grey;
+  color: tomato;
+}
+
+/* line 77, ../compass/sass/aaltosulku.scss */
+footer {
+  background-color: rgba(219, 224, 154, 0.2);
+}
+
+/* line 81, ../compass/sass/aaltosulku.scss */
+header {
+  height: 100px;
 }

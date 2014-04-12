@@ -1,15 +1,25 @@
 @import 'compass/css3';
+/*
 $lindeman-text-color: #444;
 $main: rgba(28,20,13,1);
 $bg: rgba(183,212,87,1);
 $text: grey;
 $link: rgba(183,212,87,1);
 $right: 5px solid rgba(28,20,13,1);
+*/
 
+$lindeman-text-color: #444;
+$decoration-line: tomato;
+$bg: tomato;
+//$text: rgba(153,23,60,1);
+$link:  tomato;
+$right: 5px solid rgba(105,165,164,0.7);
+$body: rgba(229,234,164,0.2);
 
 body {
 	font-family: 'Open Sans', sans-serif;
-	background-color:rgba(242,244,225,1);
+	//background-color:rgba(240,240,216,1);
+	background-color: $body + 50;
 }
 
 
@@ -60,6 +70,14 @@ h1, h2, h3, h4, h5, h6{
 }
 
 a {
-	color:grey;
+	color:$bg;
 	
+}
+
+footer {
+	background-color:$body - 10;
+}
+
+header {
+	height:100px;
 }
