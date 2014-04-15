@@ -15,18 +15,20 @@ $bg: tomato;
 $link:  tomato;
 $right: 5px solid rgba(105,165,164,0.7);
 $body: rgba(229,234,164,0.2);
+$footer: rgba(0,0,0,0.05);
 
 body {
 	font-family: 'Open Sans', sans-serif;
 	//background-color:rgba(240,240,216,1);
-	background-color: $body + 50;
+	background-color: white;
+	border-top:15px solid $decoration-line;
 }
 
 
 /* Tämä on se efekti, joka tulee maalatessa hiirellä sivulla */
 ::selection {
 	background: $bg; /* Safari */
-	color:$bg;
+	color:white;
 
 }
 ::-moz-selection {
@@ -75,9 +77,12 @@ a {
 }
 
 footer {
-	background-color:$body - 10;
+	background-color:$footer;
 }
 
 header {
 	height:100px;
+	//background-color:rgba(52, 48, 45,0.1);
+	//color:white;
+
 }

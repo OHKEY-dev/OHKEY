@@ -1,32 +1,9 @@
+@import 'compass/css3';
 @import 'aaltosulku.scss';
-body {
- border-top:5px solid rgba(0,0,0,0.0);
- background-color:$body + 50;
-
-}
-
-header {
-background-color: $bg;
-	background: linear-gradient(45deg, $bg + 180 25%,
-    $bg + 150 25%, $bg  + 150 50%, 
-    $bg + 180 50%, $bg + 180 75%, 
-    $bg + 150 75%);
-background-size:10px 10px;
 
 
 
-color:$lindeman-text-color; // muuta tämä
-}
 
-nav ul li a{
-color:$bg; //muuta tämä
-
-//background:$bg;
-
-padding-left:5px;
-padding-right:5px;
-
-}
 
 section {
 	border:none;
@@ -36,13 +13,13 @@ section {
 .ruutu-12-tablet {
 	padding-bottom:0;
 }
-
+/*
 #header-line2{
 	width: 100%;
 	margin: 0 auto;
-	border-bottom:15px solid $decoration-line;
+	border-bottom:15px solid $bg;
 }
-
+*/
 
 //Tällä tehdään tyhjää tilaa ohjeluettelon alle, jotta scrollspy toimii mukavasti
 .footer-top {
@@ -63,13 +40,13 @@ liitoksissa oleva divi on käyttäjän ikkunassa näkyvillä **/
 	//font-size:125%;
 
 	//background-color: $bg;
-	box-shadow: 2px 2px 2px $decoration-line ;
+	   box-shadow: 2px 2px 2px $decoration-line ;
 	//border-left:3px solid tomato;
 	//border-right:3px solid tomato;
-	//border-right:5px solid rgba(255,99,71,0.9);
+	border-right:5px solid rgba(255,99,71,0.9);
 	//border-right:2px solid $link;
 	//border-bottom:2px solid $link;
-	background-color: $bg;
+	  background-color: $bg;
 	//background-color: rgba(150,150,150,0.1);
 	//border-left:5px solid rgba(200,200,200,0.5);
 a{
@@ -134,7 +111,10 @@ Isokokoisille listaitemeille se aiheuttaa ikävän rivivaihdon */
 	transition: padding-left 0.5s;
 	font-size:90%;
 
+}
 
+.toc-title {
+	font-size:115%;
 }
 
 

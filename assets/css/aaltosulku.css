@@ -1,4 +1,4 @@
-@charset "UTF-8";
+@charset "CP850";
 /*
 $lindeman-text-color: #444;
 $main: rgba(28,20,13,1);
@@ -7,33 +7,34 @@ $text: grey;
 $link: rgba(183,212,87,1);
 $right: 5px solid rgba(28,20,13,1);
 */
-/* line 19, ../compass/sass/aaltosulku.scss */
+/* line 20, ../compass/sass/aaltosulku.scss */
 body {
   font-family: 'Open Sans', sans-serif;
-  background-color: rgba(255, 255, 214, 0.2);
+  background-color: white;
+  border-top: 15px solid tomato;
 }
 
 /* Tämä on se efekti, joka tulee maalatessa hiirellä sivulla */
-/* line 27, ../compass/sass/aaltosulku.scss */
+/* line 29, ../compass/sass/aaltosulku.scss */
 ::selection {
   background: tomato;
   /* Safari */
-  color: tomato;
+  color: white;
 }
 
-/* line 32, ../compass/sass/aaltosulku.scss */
+/* line 34, ../compass/sass/aaltosulku.scss */
 ::-moz-selection {
   background: tomato;
   /* Firefox */
   color: white;
 }
 
-/* line 38, ../compass/sass/aaltosulku.scss */
+/* line 40, ../compass/sass/aaltosulku.scss */
 nav {
   text-align: center;
 }
 
-/* line 43, ../compass/sass/aaltosulku.scss */
+/* line 45, ../compass/sass/aaltosulku.scss */
 nav ul li {
   display: inline-block;
   text-align: center;
@@ -42,7 +43,7 @@ nav ul li {
   margin: auto;
 }
 
-/* line 51, ../compass/sass/aaltosulku.scss */
+/* line 53, ../compass/sass/aaltosulku.scss */
 nav ul {
   margin: auto;
   display: inline-block;
@@ -53,28 +54,28 @@ nav ul {
   float: right;
 }
 
-/* line 61, ../compass/sass/aaltosulku.scss */
+/* line 63, ../compass/sass/aaltosulku.scss */
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Open Sans', sans-serif;
 }
 
-/* line 67, ../compass/sass/aaltosulku.scss */
+/* line 69, ../compass/sass/aaltosulku.scss */
 .p-footer {
   text-align: left;
   font-size: 70%;
 }
 
-/* line 72, ../compass/sass/aaltosulku.scss */
+/* line 74, ../compass/sass/aaltosulku.scss */
 a {
   color: tomato;
 }
 
-/* line 77, ../compass/sass/aaltosulku.scss */
+/* line 79, ../compass/sass/aaltosulku.scss */
 footer {
-  background-color: rgba(219, 224, 154, 0.2);
+  background-color: rgba(0, 0, 0, 0.05);
 }
 
-/* line 81, ../compass/sass/aaltosulku.scss */
+/* line 83, ../compass/sass/aaltosulku.scss */
 header {
   height: 100px;
 }
