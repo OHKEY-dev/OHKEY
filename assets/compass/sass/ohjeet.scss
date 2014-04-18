@@ -5,6 +5,7 @@
 
 
 
+
 section {
 	border:none;
 	margin-bottom:5%;
@@ -40,16 +41,23 @@ liitoksissa oleva divi on käyttäjän ikkunassa näkyvillä **/
 	//font-size:125%;
 
 	//background-color: $bg;
-	   box-shadow: 2px 2px 2px $decoration-line ;
+	
+	 box-shadow: 2px 2px 2px $decoration-line ;
+	
 	//border-left:3px solid tomato;
 	//border-right:3px solid tomato;
-	border-right:5px solid rgba(255,99,71,0.9);
+	
+	//border-right:5px solid rgba(255,99,71,0.9);
+	
 	//border-right:2px solid $link;
 	//border-bottom:2px solid $link;
+	
 	  background-color: $bg;
+	
 	//background-color: rgba(150,150,150,0.1);
 	//border-left:5px solid rgba(200,200,200,0.5);
-a{
+	border-radius:2px 2px 2px 2px;
+a {
 
 	color:white;
 }
@@ -68,7 +76,7 @@ Isokokoisille listaitemeille se aiheuttaa ikävän rivivaihdon */
 /** nämä margin-leftit ovat vain tuodakseen sisennysilmettä aliotsikoidihn - voi poistella jos halajaa **/
 /** cat-subin ja cat-main-title padding-bottomit ovat vain scrollspyn testaamiseen - voi poistella jos halajaa**/
 .cat-sub-toc {
-	margin-left:5.5%;
+	//margin-left:5.5%;
 }
 .cat-sub {
 	margin-left:1.5%;
