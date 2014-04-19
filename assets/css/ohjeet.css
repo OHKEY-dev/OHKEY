@@ -80,13 +80,18 @@ header {
   height: 100px;
 }
 
-/* line 9, ../compass/sass/ohjeet.scss */
+/* line 12, ../compass/sass/ohjeet.scss */
+#toc .toc-title {
+  font-size: 90%;
+}
+
+/* line 19, ../compass/sass/ohjeet.scss */
 section {
   border: none;
   margin-bottom: 5%;
 }
 
-/* line 14, ../compass/sass/ohjeet.scss */
+/* line 24, ../compass/sass/ohjeet.scss */
 .ruutu-12-tablet {
   padding-bottom: 0;
 }
@@ -98,13 +103,13 @@ section {
 	border-bottom:15px solid $bg;
 }
 */
-/* line 26, ../compass/sass/ohjeet.scss */
+/* line 36, ../compass/sass/ohjeet.scss */
 .footer-top {
   margin-top: 60%;
   width: 100%;
 }
 
-/* line 32, ../compass/sass/ohjeet.scss */
+/* line 42, ../compass/sass/ohjeet.scss */
 .affix {
   position: fixed;
   top: 5%;
@@ -112,93 +117,94 @@ section {
 
 /** .active luokka annetaan scrollspy-javascript pluginin ansiosta sis.luetteloitemille sen mukaan, mikä luetteloitemiin
 liitoksissa oleva divi on käyttäjän ikkunassa näkyvillä **/
-/* line 39, ../compass/sass/ohjeet.scss */
+/* line 51, ../compass/sass/ohjeet.scss */
 .active {
   padding-left: 5%;
-  box-shadow: 2px 2px 2px tomato;
   background-color: tomato;
   border-radius: 2px 2px 2px 2px;
 }
-/* line 60, ../compass/sass/ohjeet.scss */
+/* line 76, ../compass/sass/ohjeet.scss */
 .active a {
+  font-size: 110%;
   color: white;
+  text-shadow: 0 1px rgba(0, 0, 0, 0.3);
 }
 
 /* .active:after tai :before:n avulla voi laittaa merkkejä tai ihan mitä vain korostaakseen aktiiviseksi tulleen sis.luetteloitemiä 
 Isokokoisille listaitemeille se aiheuttaa ikävän rivivaihdon */
-/* line 70, ../compass/sass/ohjeet.scss */
+/* line 89, ../compass/sass/ohjeet.scss */
 .active:after {
   content: "";
+  color: white;
+  float: right;
+  border-top: 11px solid transparent;
+  border-bottom: 11px solid transparent;
+  border-right: 11px solid white;
 }
 
 /** nämä margin-leftit ovat vain tuodakseen sisennysilmettä aliotsikoidihn - voi poistella jos halajaa **/
 /** cat-subin ja cat-main-title padding-bottomit ovat vain scrollspyn testaamiseen - voi poistella jos halajaa**/
-/* line 81, ../compass/sass/ohjeet.scss */
+/* line 109, ../compass/sass/ohjeet.scss */
 .cat-sub {
   margin-left: 1.5%;
   margin-bottom: 7%;
   width: 85%;
 }
 
-/* line 87, ../compass/sass/ohjeet.scss */
+/* line 115, ../compass/sass/ohjeet.scss */
 .cat-main-title {
   margin-bottom: 8%;
   font-size: 155%;
 }
 
-/* line 92, ../compass/sass/ohjeet.scss */
+/* line 120, ../compass/sass/ohjeet.scss */
 .sub-title {
   margin-bottom: 1%;
   cursor: pointer;
 }
 
-/* line 98, ../compass/sass/ohjeet.scss */
+/* line 126, ../compass/sass/ohjeet.scss */
 .sub-title-mark {
   margin-right: 1px;
   color: tomato;
   float: left;
 }
 
-/* line 106, ../compass/sass/ohjeet.scss */
+/* line 134, ../compass/sass/ohjeet.scss */
 .cat-title-mark:before {
   content: "";
   float: left;
 }
 
-/* line 110, ../compass/sass/ohjeet.scss */
+/* line 138, ../compass/sass/ohjeet.scss */
 .cat-title-mark:after {
   content: "";
   float: right;
 }
 
-/* line 117, ../compass/sass/ohjeet.scss */
+/* line 145, ../compass/sass/ohjeet.scss */
 .toc-ul li {
   list-style: none;
   transition: padding-left 0.5s;
   font-size: 90%;
 }
 
-/* line 124, ../compass/sass/ohjeet.scss */
-.toc-title {
-  font-size: 115%;
-}
-
-/* line 129, ../compass/sass/ohjeet.scss */
+/* line 153, ../compass/sass/ohjeet.scss */
 .list-group-item {
   color: tomato;
 }
 
-/* line 133, ../compass/sass/ohjeet.scss */
+/* line 157, ../compass/sass/ohjeet.scss */
 .list-group-item-heading {
   color: tomato;
 }
-/* line 135, ../compass/sass/ohjeet.scss */
+/* line 159, ../compass/sass/ohjeet.scss */
 .list-group-item-heading a {
   font-weight: bold;
   font-size: 115%;
 }
 
-/* line 144, ../compass/sass/ohjeet.scss */
+/* line 168, ../compass/sass/ohjeet.scss */
 .content-container div:target {
   animation-duration: 1.2s;
   -moz-animation-duration: 1.2s;
@@ -209,28 +215,28 @@ Isokokoisille listaitemeille se aiheuttaa ikävän rivivaihdon */
 }
 
 @-moz-keyframes in-out {
-  /* line 155, ../compass/sass/ohjeet.scss */
+  /* line 179, ../compass/sass/ohjeet.scss */
   from {
     color: tomato;
   }
 }
 
 @-webkit-keyframes in-out {
-  /* line 164, ../compass/sass/ohjeet.scss */
+  /* line 188, ../compass/sass/ohjeet.scss */
   from {
     color: tomato;
   }
 }
 
 @keyframes in-out {
-  /* line 173, ../compass/sass/ohjeet.scss */
+  /* line 197, ../compass/sass/ohjeet.scss */
   from {
     color: tomato;
   }
 }
 
-/* line 182, ../compass/sass/ohjeet.scss */
+/* line 206, ../compass/sass/ohjeet.scss */
 .sub-title-mark:before {
-  content: ">>";
+  content: "{}";
   font-weight: bold;
 }

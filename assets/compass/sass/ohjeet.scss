@@ -2,8 +2,18 @@
 @import 'aaltosulku.scss';
 
 
+#toc {
 
 
+	li a{
+		
+	}
+
+	.toc-title {
+
+		font-size: 90%;
+	}
+}
 
 
 section {
@@ -32,6 +42,8 @@ section {
 .affix {
 	position:fixed;
 	top:5%;
+	
+
 }
 
 /** .active luokka annetaan scrollspy-javascript pluginin ansiosta sis.luetteloitemille sen mukaan, mikä luetteloitemiin
@@ -42,7 +54,7 @@ liitoksissa oleva divi on käyttäjän ikkunassa näkyvillä **/
 
 	//background-color: $bg;
 	
-	 box-shadow: 2px 2px 2px $decoration-line ;
+	// box-shadow: 2px 2px 2px $decoration-line ;
 	
 	//border-left:3px solid tomato;
 	//border-right:3px solid tomato;
@@ -52,15 +64,22 @@ liitoksissa oleva divi on käyttäjän ikkunassa näkyvillä **/
 	//border-right:2px solid $link;
 	//border-bottom:2px solid $link;
 	
-	  background-color: $bg;
+	 background-color: $bg;
 	
 	//background-color: rgba(150,150,150,0.1);
 	//border-left:5px solid rgba(200,200,200,0.5);
 	border-radius:2px 2px 2px 2px;
-a {
 
+
+
+
+a {
+	font-size:110%;
 	color:white;
+	text-shadow:0 1px rgba(0,0,0,0.3);
 }
+
+
 
 }
 
@@ -69,9 +88,18 @@ a {
 Isokokoisille listaitemeille se aiheuttaa ikävän rivivaihdon */
 .active:after{
 	content: ""; 
+	color:white;
+	float:right;
+
+	border-top: 11px solid transparent;
+	border-bottom: 11px solid transparent; 
 
 
+	border-right:11px solid rgba(255,255,255,1); 
 }
+
+
+
 
 /** nämä margin-leftit ovat vain tuodakseen sisennysilmettä aliotsikoidihn - voi poistella jos halajaa **/
 /** cat-subin ja cat-main-title padding-bottomit ovat vain scrollspyn testaamiseen - voi poistella jos halajaa**/
@@ -118,12 +146,8 @@ Isokokoisille listaitemeille se aiheuttaa ikävän rivivaihdon */
 	list-style: none;
 	transition: padding-left 0.5s;
 	font-size:90%;
-
 }
 
-.toc-title {
-	font-size:115%;
-}
 
 
 .list-group-item {
@@ -180,7 +204,7 @@ color:$bg;
 
 
 .sub-title-mark:before {
-	content:">>";
+	content:"{}";
 	font-weight:bold;
 }
 
